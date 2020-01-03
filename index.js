@@ -4,21 +4,17 @@ $(function() {
     $('.fill-screen').css('height, window.innerHeight');
   });
 
-  // scrollspy
-  $(body).scrollspy({ target: '.nav' });
+  // Smooth scrolling
+  $('nav a').bind('click', function() {
+    $('html, body')
+      .stop()
+      .animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top,
+        },
+        1500,
+        'easeInOutExpo'
+      );
+    event.preventDefault();
+  });
 });
-
-// Funtion to initalise scrollspy funtionality
-// $(function() {
-//   var $nav = $('#nav');
-
-//   $('#sticky-navigation').scrollspy({
-//     min: $nav.offset().top,
-//     onEnter: function(element, position) {
-//       $nav.addClass('fixed');
-//     },
-//     onLeave: function(element, position) {
-//       $nav.removeClass('fixed');
-//     },
-//   });
-// });
