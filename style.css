@@ -78,7 +78,6 @@ div > h1 {
 
 .down-button {
   /* bottom: 0; */
-  color: #ffffff;
   position: absolute;
   top: 85%;
   text-align: center;
@@ -86,6 +85,13 @@ div > h1 {
   z-index: 3;
 }
 
+a.btn {
+  color: #ffffff;
+}
+
+a.btn:hover {
+  color: #9faac5;
+}
 .fill-screen {
   background-size: cover;
   background-position: center;
