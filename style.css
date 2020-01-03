@@ -48,6 +48,34 @@ header {
   position: absolute;
 }
 
+#main-heading,
+#tagline {
+  position: absolute;
+}
+
+div > h1 {
+  text-align: center;
+}
+
+#main-heading {
+  font-size: 4rem;
+  top: 10%;
+  position: absolute;
+  left: 70%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+#tagline {
+  top: 23%;
+  position: absolute;
+  left: 90%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+}
+
 .fill-screen {
   background-size: cover;
   background-position: center;
@@ -61,6 +89,15 @@ header {
 
 .main-image {
   background-image: url('./src/assets/windmill.jpg');
+  /* filter: alpha(opacity=20); */
+  filter: brightness(50%);
+  /* opacity: 0.5; */
+}
+
+h1#main-heading,
+h3#tagline {
+  color: #ffffff;
+  z-index: 5;
 }
 
 .parallax-section {
