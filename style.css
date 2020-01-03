@@ -8,14 +8,68 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+}
+
+p,
+a {
+  font-family: 'Open sans';
+}
+
+/* End of Global style rules  */
+
 main {
   height: 100vh;
 }
 
 /* Main content area styling */
+
+header {
+  position: absolute;
+}
+
 .fill-screen {
-  background-image: url('./assets/spreekt.jpg');
   background-size: cover;
   background-position: center;
   height: 100%;
+}
+
+.fixed-attachment {
+  background-attachment: fixed;
+}
+
+.main-image {
+  background-image: url('./assets/spreekt.jpg');
+}
+
+footer {
+  background-color: #333;
+  bottom: -9800px;
+  color: #ddd;
+  height: 6rem;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+  z-index: 10;
 }
