@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Resources</li>
-          <li>Events</li>
-          <li>contact</li>
+    <header id="top">
+      <nav id="nav" class="nav">
+        <ul id="navbar">
+          <li class="link-item"><a href="#top">Home</a></li>
+          <li class="link-item"><a href="#resources">Resources </a></li>
+          <li class="link-item"><a href="#events">Events</a></li>
+          <li class="link-item"><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -71,7 +71,7 @@
         />
       </section>
     </main>
-    <footer id="contact-us" class="contact-us">
+    <footer id="contact" class="contact-us">
       <p>
         <span class="copyright">&copy;2020</span>
         <span class="address">
@@ -91,6 +91,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.scrollspy.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

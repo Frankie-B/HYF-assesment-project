@@ -48,13 +48,39 @@ header {
   position: absolute;
 }
 
+#top {
+  top: 15px;
+  width: 100%;
+  z-index: 20;
+}
+
+#navbar {
+  position: absolute;
+  right: 3%;
+}
+ul li a {
+  color: #ffffff;
+  padding: 3px 15px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  border: 1px solid #9faac5;
+  color: #9faac5;
+}
+
+.link-item {
+  float: left;
+  list-style: none;
+}
+
+li.link-item {
+  margin-left: 1rem;
+}
+
 #main-heading,
 #tagline {
   position: absolute;
-}
-
-div > h1 {
-  text-align: center;
 }
 
 #main-heading {
