@@ -76,6 +76,16 @@ div > h1 {
   width: 100%;
 }
 
+.down-button {
+  /* bottom: 0; */
+  color: #ffffff;
+  position: absolute;
+  top: 85%;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+
 .fill-screen {
   background-size: cover;
   background-position: center;
