@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   font-family: Montserrat;
-}
+}  /* dit wil je wss op de html hebben */
 
 h1 {
   font-weight: 700;
@@ -54,16 +54,11 @@ header {
 }
 
 #top {
-  width: 100%;
+  width: 100%; /* die is niet 100% width van zichzelf? */
   z-index: 20;
 }
 
-#navbar {
-  position: absolute;
-  right: 3%;
-}
-
-.nav {
+.nav { /* deze komt hoger in de html, dus heb omhoog geplaatst in de css */
   background-color: #2f2f2f;
   position: fixed;
   width: 100%;
@@ -71,6 +66,11 @@ header {
   /* padding: 5px 15px; */
   top: 0;
   z-index: 30;
+}
+
+#navbar {
+  position: absolute;
+  right: 3%;
 }
 
 ul li a {
@@ -134,6 +134,7 @@ a.btn {
 a.btn:hover {
   color: #9faac5;
 }
+
 .fill-screen {
   background-size: cover;
   background-position: center;
@@ -229,13 +230,13 @@ div.list-container h4 {
 
 footer {
   background-color: #333;
-  bottom: -2300px;
+  bottom: -2300px; /* Noooooooooooooooooooooooooooooooooo, this will completely mess up ur responsiveness */
   color: #ddd;
   font-size: 1rem;
   height: 70px;
   left: 0;
   line-height: 70px;
-  position: absolute;
+  position: absolute; /* combined with this */
   text-align: center;
   width: 100%;
   z-index: 10;
@@ -249,7 +250,7 @@ footer {
 #email {
   float: right;
   margin-right: 10%;
-  vertical-align: auto;
+  vertical-align: auto; /* not valid */
 }
 
 #email:hover {
