@@ -4,8 +4,8 @@ $(function() {
     $('.fill-screen').css('height, window.innerHeight');
   });
 
-  // Smooth scrolling
-  $('nav a').bind('click', function() {
+  //  Smooth scroll feature
+  $('nav a, .down-button a').bind('click', function() {
     $('html, body')
       .stop()
       .animate(
