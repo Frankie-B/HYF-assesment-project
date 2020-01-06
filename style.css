@@ -1,17 +1,7 @@
-/* Global reset */
-
-* {
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  outline: none;
-  padding: 0;
-}
-
 body {
-  min-height: 100%;
-  overflow-x: hidden;
-  position: relative;
+  height: 100%;
+  font-family: 'Open sans', sans-serif;
+  text-align: center;
 }
 
 h1,
@@ -20,138 +10,55 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Montserrat;
-}  /* dit wil je wss op de html hebben */
-
-h1 {
-  font-weight: 700;
-}
-
-h2,
-h3 {
-  font-weight: 600;
-}
-
-li {
-  list-style: none;
-}
-
-p,
-a {
-  font-family: 'Open sans';
-}
-
-/* End of Global style rules  */
-
-main {
-  height: 100vh;
-}
-
-/* Main content area styling */
-
-header {
-  position: absolute;
-}
-
-#top {
-  width: 100%; /* die is niet 100% width van zichzelf? */
-  z-index: 20;
-}
-
-.nav { /* deze komt hoger in de html, dus heb omhoog geplaatst in de css */
-  background-color: #2f2f2f;
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  /* padding: 5px 15px; */
-  top: 0;
-  z-index: 30;
-}
-
-#navbar {
-  position: absolute;
-  right: 3%;
-}
-
-ul li a {
-  color: #ffffff;
-  padding: 3px 15px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  border: 1px solid #9faac5;
-  color: #9faac5;
-}
-
-.link-item {
-  float: left;
-  list-style: none;
-  margin-top: 15px;
-}
-
-li.link-item {
-  margin-left: 1rem;
-}
-
-#main-heading,
-#tagline {
-  position: absolute;
-}
-
-#main-heading {
-  font-size: 4rem;
-  top: 10%;
-  position: absolute;
-  left: 70%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 100%;
-}
-
-#tagline {
-  top: 23%;
-  position: absolute;
-  left: 90%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 100%;
-}
-
-.down-button {
-  /* bottom: 0; */
-  position: absolute;
-  top: 85%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   text-align: center;
+}
+p {
+  color: #000;
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 3;
 }
 
-a.btn {
-  color: #ffffff;
+.topnav a {
+  float: right;
+  display: block;
+  color: #fff;
+  right: 15px;
+  text-align: center;
+  margin-right: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1rem;
 }
-
-a.btn:hover {
+.topnav a:hover {
+  border: 1px solid #9faac5;
   color: #9faac5;
 }
 
-.fill-screen {
+#background {
+  background: url('../assets/windmill.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  filter: brightness(50%);
   height: 100vh;
-  width: 100vw;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+  top: 0;
 }
 
-.fixed-attachment {
-  background-attachment: fixed;
-  filter: brightness(50%);
-}
-
-.main-image {
-  background-image: url('./src/assets/windmill.jpg');
-  /* filter: alpha(opacity=20); */
-  filter: brightness(50%);
-  /* opacity: 0.5; */
+.main-heading {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  text-align: center;
 }
 
 h1#main-heading,
@@ -161,85 +68,206 @@ h3#tagline {
 
 #main-heading,
 .subheading {
-  color: #ffffff;
+  color: #fff;
 }
 
 .subheading {
   margin-bottom: 15px;
 }
 
-h3.subheading.black-text {
+.content-heading {
+  color: #000;
+}
+
+h3.subheading {
   font-style: italic;
+  font-size: 20px;
+  margin-top: 40px;
 }
 
-#resources-content {
-  background-color: #ffffff;
-  border-radius: 10px;
-  bottom: -80%;
-  height: 70%;
-  left: 15%;
-  padding: 10px 15px;
+.down-button {
   position: absolute;
+  top: 80%;
   text-align: center;
-  width: 70%;
+  width: 100%;
+  z-index: 3;
 }
 
-.black-text {
-  color: #000000;
+a.btn {
+  color: #fff;
 }
 
-section p {
-  /* background-color: #ffffff; */
-  padding: 15px 15px;
-  position: absolute;
-  width: 95%;
-  z-index: 5;
-}
-
-.card {
-  top: 60%;
-  position: absolute;
-  width: 350px;
-}
-
-div.list-container a {
-  display: block;
-  margin-bottom: 15px;
-  text-decoration: none;
-}
-
+a.btn:hover,
 div.list-container a:hover {
   color: #9faac5;
 }
 
-div.list-container h4 {
-  margin-bottom: 15px;
+.list-container a {
+  color: #000000;
+  margin: 40px;
+  padding: 3px 15px;
+  text-decoration: none;
 }
 
-#books {
-  left: -3%;
+.list-container a:hover {
+  border: 1px solid #9faac5;
 }
 
-#video-list {
-  left: 30%;
-}
-
-#app-list {
-  left: 66%;
-}
-
-footer {
-  background-color: #333;
-  bottom: -2300px; /* Noooooooooooooooooooooooooooooooooo, this will completely mess up ur responsiveness */
-  color: #ddd;
-  font-size: 1rem;
-  height: 70px;
-  left: 0;
-  line-height: 70px;
-  position: absolute; /* combined with this */
+.container-fluid {
+  margin: 0 auto;
+  padding: 3% 15%;
   text-align: center;
+}
+
+/* Content sections */
+
+.section-heading {
+  font-size: 3rem;
+  /* line-height: 1.5; */
+}
+
+.white-section {
+  background-color: #fff;
+  height: 100vh;
+  text-align: center;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.img1 {
+  background-image: url('../assets/tulips.jpg');
+  min-height: 90vh;
+}
+
+.img2 {
+  background-image: url('../assets/bikes.jpg');
+  min-height: 60vh;
+}
+
+.img3 {
+  background-image: url('../assets/canal.jpg');
+  min-height: 60vh;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div.list-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section li {
+  list-style: none;
+  margin-top: 30px;
+}
+
+div.container h4 {
+  margin: 20px 0;
+}
+
+#resources,
+#meetups,
+#community {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* Meetup styles  */
+#meetup p a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#meetup p a:hover {
+  color: #9faac5;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+p.alt-meetup-info {
+  visibility: hidden;
+}
+
+/* Community section style rules  */
+.social {
+  margin-top: 10px;
+}
+span a {
+  color: #000000;
+  margin-left: 20px;
+}
+
+span a:hover {
+  color: #9faac5;
+}
+
+/* Contact section style  */
+h3.contact-subheading {
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 3650px;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  z-index: 2;
+}
+
+#contact-info {
+  color: red;
+  font-weight: 600;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* top: 3390px; */
+  position: absolute;
+  width: 60%;
+}
+
+/* Up-arrow button styles */
+
+#up-arrow {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 50px;
   width: 100%;
-  z-index: 10;
+  z-index: 3;
+}
+
+#up-arrow a.btn {
+  color: #000;
+}
+
+#up-arrow a.btn:hover {
+  color: #9faac5;
+}
+
+#footer {
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  position: sticky;
+  width: 100%;
+  z-index: 3;
 }
 
 #address {
@@ -250,7 +278,6 @@ footer {
 #email {
   float: right;
   margin-right: 10%;
-  vertical-align: auto; /* not valid */
 }
 
 #email:hover {
@@ -258,6 +285,154 @@ footer {
 }
 
 footer a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .img1,
+  .img2,
+  .img3 {
+    background-attachment: scroll;
+  }
+
+  .img-text {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+  div p.alt-meetup-info {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Heading element styles */
+  .main-heading {
+    font-size: 6rem;
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .topnav a {
+    display: block;
+    margin-top: 1%;
+    width: 100%;
+  }
+
+  #tagline {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+
+  .white-section {
+    height: 50%;
+  }
+
+  /* Section content styles */
+
+  #resources {
+    overflow: scroll;
+    text-align: center;
+  }
+
+  div.list-container h4 {
+    font-size: 15px;
+  }
+
+  #resources ul {
+    text-align: center;
+  }
+
+  div.list-container h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 65%;
+  }
+
+  div.list-container a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #resources,
+  #meetups,
+  #community {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  #books a,
+  #videos a,
+  #apps a {
+    display: inline-block;
+  }
+
+  ul.resource-info a.link-text {
+    margin-right: 50px;
+  }
+
+  #resources div.list-container h4 {
+    display: inline-block;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  div p.alt-meetup-info {
+    visibility: visible;
+    /* margin-top: 35px; */
+  }
+
+  .alt-meetup-info {
+    /* display: inline; */
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  /* Table styles */
+
+  table {
+    visibility: hidden;
+  }
+
+  div.social {
+    font-size: 3px;
+    margin-top: 5px;
+  }
+
+  /* Contact section style rules */
+
+  /* Footer styling rules */
+
+  footer span {
+    color: #fff;
+    font-size: 0.5rem;
+    text-decoration: none;
+  }
+
+  span a,
+  span address {
+    margin-top: 8px;
+  }
+
+  #address {
+    float: left;
+    margin-left: 6%;
+  }
+  #email {
+    float: right;
+    margin-right: 4%;
+    margin-top: 10px;
+  }
 }

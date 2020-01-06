@@ -18,3 +18,18 @@ $(function() {
     event.preventDefault();
   });
 });
+
+// Function for back to top feature
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#up-arrow').fadeIn();
+    } else {
+      $('#up-arrow').fadeOut();
+    }
+  });
+  $('#up-arrow').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 600);
+    return false;
+  });
+});

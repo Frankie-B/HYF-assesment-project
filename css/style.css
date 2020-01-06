@@ -1,0 +1,449 @@
+body {
+  height: 100%;
+  font-family: 'Open sans', sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+p {
+  color: #000;
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #fff;
+  right: 15px;
+  text-align: center;
+  margin-right: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.topnav a:hover {
+  border: 1px solid #9faac5;
+  color: #9faac5;
+}
+
+#background {
+  background: url('../assets/windmill.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  height: 100vh;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+  top: 0;
+}
+
+.main-heading {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+}
+
+h1#main-heading,
+h3#tagline {
+  z-index: 5;
+}
+
+#main-heading,
+.subheading {
+  color: #fff;
+}
+
+.subheading {
+  margin-bottom: 15px;
+}
+
+.content-heading {
+  color: #000;
+}
+
+h3.subheading {
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.down-button {
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+
+a.btn {
+  color: #fff;
+}
+
+a.btn:hover,
+div.list-container a:hover {
+  color: #9faac5;
+}
+
+.list-container a {
+  color: #000000;
+  margin: 40px;
+  padding: 3px 15px;
+  text-decoration: none;
+}
+
+.list-container a:hover {
+  border: 1px solid #9faac5;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 3% 15%;
+  text-align: center;
+}
+
+/* Content sections */
+
+.section-heading {
+  font-size: 3rem;
+  /* line-height: 1.5; */
+}
+
+.white-section {
+  background-color: #fff;
+  height: 100vh;
+  text-align: center;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.img1 {
+  background-image: url('../assets/tulips.jpg');
+  min-height: 90vh;
+}
+
+.img2 {
+  background-image: url('../assets/bikes.jpg');
+  min-height: 60vh;
+}
+
+.img3 {
+  background-image: url('../assets/canal.jpg');
+  min-height: 60vh;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div.list-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section li {
+  list-style: none;
+  margin-top: 30px;
+}
+
+div.container h4 {
+  margin: 20px 0;
+}
+
+#resources,
+#meetups,
+#community {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* Meetup styles  */
+#meetup p a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#meetup p a:hover {
+  color: #9faac5;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+p.alt-meetup-info {
+  visibility: hidden;
+}
+
+/* Community section style rules  */
+.social {
+  margin-top: 10px;
+}
+span a {
+  color: #000000;
+  margin-left: 20px;
+}
+
+span a:hover {
+  color: #9faac5;
+}
+
+/* Contact section style  */
+h3.contact-subheading {
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 3650px;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  z-index: 2;
+}
+
+p.contact-info {
+  font-weight: 600;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 3590px;
+  position: absolute;
+  width: 60%;
+}
+
+.user-info {
+  margin: 0 auto;
+  position: absolute;
+  top: 4750px;
+  left: 0;
+  right: 0;
+}
+
+#cta-button {
+  left: 20%;
+}
+
+/* Up-arrow button styles */
+
+#up-arrow {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  z-index: 3;
+}
+
+#up-arrow a.btn {
+  color: #000;
+}
+
+#up-arrow a.btn:hover {
+  color: #9faac5;
+}
+
+#footer {
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+}
+
+#address {
+  float: left;
+  margin-left: 7%;
+}
+
+#email {
+  float: right;
+  margin-right: 10%;
+}
+
+#email:hover {
+  color: #9faac5;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .img1,
+  .img2,
+  .img3 {
+    background-attachment: scroll;
+  }
+
+  .img-text {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+  div p.alt-meetup-info {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Heading element styles */
+  .main-heading {
+    font-size: 6rem;
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .topnav a {
+    display: block;
+    margin-top: 1%;
+    width: 100%;
+  }
+
+  #tagline {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+
+  .white-section {
+    height: 50%;
+  }
+
+  /* Section content styles */
+
+  #resources {
+    overflow: scroll;
+    text-align: center;
+  }
+
+  div.list-container h4 {
+    font-size: 15px;
+  }
+
+  #resources ul {
+    text-align: center;
+  }
+
+  div.list-container h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 65%;
+  }
+
+  div.list-container a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #resources,
+  #meetups,
+  #community {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  #books a,
+  #videos a,
+  #apps a {
+    display: inline-block;
+  }
+
+  ul.resource-info a.link-text {
+    margin-right: 50px;
+  }
+
+  #resources div.list-container h4 {
+    display: inline-block;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  div p.alt-meetup-info {
+    visibility: visible;
+    /* margin-top: 35px; */
+  }
+
+  .alt-meetup-info {
+    /* display: inline; */
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  /* Table styles */
+
+  table {
+    visibility: hidden;
+  }
+
+  div.social {
+    font-size: 3px;
+    margin-top: 5px;
+  }
+
+  /* Contact section style rules */
+
+  /* Footer styling rules */
+
+  footer span {
+    color: #fff;
+    font-size: 0.5rem;
+    text-decoration: none;
+  }
+
+  span a,
+  span address {
+    margin-top: 8px;
+  }
+
+  #address {
+    float: left;
+    margin-left: 6%;
+  }
+  #email {
+    float: right;
+    margin-right: 4%;
+    margin-top: 10px;
+  }
+}
