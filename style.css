@@ -217,29 +217,6 @@ span a:hover {
   color: #9faac5;
 }
 
-/* Contact section style  */
-h3.contact-subheading {
-  color: #ffffff;
-  font-size: 1.5rem;
-  position: absolute;
-  top: 3650px;
-  left: 30%;
-  right: 30%;
-  text-align: center;
-  z-index: 2;
-}
-
-#contact-info {
-  color: red;
-  font-weight: 600;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  /* top: 3390px; */
-  position: absolute;
-  width: 60%;
-}
-
 /* Up-arrow button styles */
 
 #up-arrow {
@@ -257,6 +234,28 @@ h3.contact-subheading {
 
 #up-arrow a.btn:hover {
   color: #9faac5;
+}
+
+/* Contact section style  */
+h3.contact-subheading {
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 3650px;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  z-index: 2;
+}
+
+.contact-content {
+  color: red;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  z-index: 5;
 }
 
 #footer {
