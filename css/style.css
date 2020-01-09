@@ -154,6 +154,12 @@ h3.contact-subheading {
   right: 30%;
 }
 
+.footer-tagline,
+#address,
+#email {
+  font-size: 0.75rem;
+}
+
 /* End of global style rules  */
 .topnav {
   position: sticky;
@@ -359,7 +365,7 @@ h3.contact-subheading {
 #footer {
   bottom: 0;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   position: fixed;
   text-align: center;
   z-index: 5;
@@ -396,7 +402,7 @@ footer a {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   /* Parallax background */
   .img1,
   .img2,
@@ -414,9 +420,18 @@ footer a {
     visibility: hidden;
   }
 
+  /* Up button style rules */
+  #up-arrow {
+    bottom: 70px;
+  }
+
   /* Contact section style rules */
   .contact-container {
-    top: 770px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 2470px;
+    width: 90%;
   }
 
   .contact-subheading {
@@ -427,6 +442,14 @@ footer a {
     font-size: 0.75rem;
     bottom: 2000px;
     width: 95%;
+  }
+
+  .contact-button {
+    left: 32%;
+  }
+
+  .user-email {
+    right: 15%;
   }
 }
 
@@ -537,7 +560,7 @@ footer a {
 
   /* Footer styling rules */
   footer span {
-    font-size: 4px;
+    font-size: 25%;
     text-decoration: none;
   }
 
