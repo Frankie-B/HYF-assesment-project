@@ -402,7 +402,7 @@ footer a {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
   /* Parallax background */
   .img1,
   .img2,
@@ -477,7 +477,7 @@ footer a {
   /* Footer style rules  */
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* Heading element styles */
   .main-heading {
     font-size: 6rem;
@@ -566,6 +566,11 @@ footer a {
 
   .user-email,
   .contact-button {
+    margin-top: 10px;
+  }
+
+  .user-email,
+  .contact-button {
     top: 3930px;
   }
 
@@ -584,23 +589,30 @@ footer a {
 
   /* Footer styling rules */
   footer span {
-    font-size: 25%;
     text-decoration: none;
   }
 
   .footer-tagline {
-    width: 3%;
+    display: none;
   }
 
   span a,
   span address {
     margin-top: 14px;
-    width: 2%;
+  }
+
+  span address {
+    width: 8%;
+  }
+
+  #address,
+  #email {
+    font-size: 8px;
   }
 
   #address {
     float: left;
-    margin-left: 6%;
+    margin-left: 3%;
   }
 
   #email {
