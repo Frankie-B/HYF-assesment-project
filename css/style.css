@@ -5,10 +5,15 @@
   padding: 0;
 }
 
+/* * {
+  border: 1px solid red;
+} */
+
 /* Global style rules */
 body {
-  height: 100%;
+  max-height: 100%;
   font-family: 'Open sans', sans-serif;
+  overflow-x: auto;
   text-align: center;
 }
 
@@ -28,6 +33,7 @@ h6 {
 .subheading,
 a.btn,
 .white-section,
+.cta,
 #footer,
 #address,
 footer a,
@@ -41,7 +47,6 @@ h3.contact-subheading,
 
 p,
 .content-heading,
-#up-arrow a.btn,
 section#resources h4,
 .list-container a,
 .community-meetups h3,
@@ -207,6 +212,10 @@ h3.subheading {
   z-index: 3;
 }
 
+#up-arrow a.btn {
+  color: #ff4f00;
+}
+
 .content-container {
   float: left;
 }
@@ -227,6 +236,7 @@ h3.subheading {
 }
 
 .white-section {
+  overflow-x: hidden;
   background-color: #fff;
 }
 
@@ -250,7 +260,6 @@ h3.subheading {
 .img2,
 .img3 {
   position: relative;
-  opacity: 0.7;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -271,12 +280,6 @@ div.container h4 {
 section#resources p {
   margin-top: 50px;
 }
-
-/* #books,
-#videos,
-#apps {
-  display: inline-block;
-} */
 
 /* Meetup styles  */
 .community-meetups h3 {
@@ -320,9 +323,9 @@ span a {
 
 /* Up-arrow button styles */
 #up-arrow {
+  margin: 5% auto;
   left: 0;
   right: 0;
-  margin: 0 auto;
   cursor: pointer;
   display: none;
   position: fixed;
@@ -330,39 +333,40 @@ span a {
   z-index: 3;
 }
 
-/* Contact section style  */
-h3.contact-subheading {
-  font-size: 1.5rem;
-  top: 3650px;
-  z-index: 2;
+.contact-bg {
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
-.contact-container {
-  top: 750px;
-}
-
-.contact-content {
-  background-color: #ffffff;
-  font-weight: 600;
-  padding: 15px;
-  top: 3750px;
-  width: 60%;
-}
-
-.user-email {
-  top: 3950px;
-  width: 250px;
-}
-
-.contact-button {
-  left: 23%;
+.contact-subheading {
+  position: absolute;
+  top: 30px;
+  left: 0;
   right: 0;
-  margin: 0 auto;
-  top: 3950px;
+  width: 40%;
 }
 
-.contact-button:hover {
-  background-color: #ff4f00;
+.contact-subheading,
+.cta {
+  margin: 0 auto;
+}
+
+.cta {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.fa-twitter {
+  color: #ffffff;
+}
+
+.fa-twitter:hover {
+  color: #ff4f00;
 }
 
 /* Footer style rules  */
@@ -542,32 +546,6 @@ footer a {
   }
 
   /* User input style rules  */
-  .contact-container {
-    top: 1095px;
-  }
-
-  .user-email,
-  .contact-button {
-    margin-top: 10px;
-  }
-
-  .user-email,
-  .contact-button {
-    top: 3930px;
-  }
-
-  .contact-content {
-    bottom: 2230px;
-  }
-
-  .contact-button {
-    left: 40%;
-  }
-
-  .user-email {
-    right: 23%;
-    width: 150px;
-  }
 
   /* Footer styling rules */
   #footer-content {
