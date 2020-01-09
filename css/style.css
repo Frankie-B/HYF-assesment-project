@@ -416,7 +416,7 @@ footer a {
 }
 
 @media screen and (max-device-width: 768px) {
-  /* Parallax background */
+  /* Parallax background  */
   .img1,
   .img2,
   .img3 {
@@ -426,13 +426,6 @@ footer a {
   .img-text {
     font-size: 1rem;
     letter-spacing: normal;
-  }
-
-  div#books ul,
-  div#videos ul,
-  div#apps ul {
-    color: red;
-    float: left;
   }
 
   /* Meetup */
@@ -448,36 +441,38 @@ footer a {
     bottom: 70px;
   }
 
-  /* Contact section style rules */
-  .contact-container {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 2470px;
-    width: 90%;
+  #resources {
+    margin-top: 90px;
   }
 
-  .contact-subheading {
-    margin-top: 10px;
+  #meetup {
+    margin-top: 90px;
   }
 
-  .contact-content {
+  /* social content */
+
+  #community {
+    margin-top: 90px;
+  }
+  .social {
     font-size: 0.75rem;
-    bottom: 2000px;
-    width: 95%;
+    margin-top: 80px;
   }
 
-  .contact-button {
-    left: 32%;
+  /* Contact section */
+  .contact-subheading {
+    font-size: 2.5rem;
   }
 
-  .user-email {
-    right: 15%;
+  .cta {
+    font-size: 1.5rem;
+    width: 70%;
   }
-
-  /* Footer style list */
-
-  /* Footer style rules  */
+  /* footer content */
+  #footer-tagline {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -545,18 +540,26 @@ footer a {
     margin-top: 5px;
   }
 
-  /* User input style rules  */
+  /* Contact section style rules  */
+  .contact-subheading {
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    font-size: 0.75rem;
+  }
 
   /* Footer styling rules */
   #footer-content {
     overflow-x: hidden;
     text-align: center;
+    width: 80%;
   }
 
   #footer-tagline,
   #address,
   #email {
-    font-size: 0.65rem;
+    font-size: 0.45rem;
   }
 
   #footer-tagline {
