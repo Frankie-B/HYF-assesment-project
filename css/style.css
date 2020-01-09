@@ -454,6 +454,27 @@ footer a {
   .user-email {
     right: 15%;
   }
+
+  /* Footer style list */
+  footer span {
+    display: inline;
+  }
+
+  .footer-tagline {
+    display: none;
+  }
+
+  #email {
+    float: right;
+    width: 25%;
+  }
+
+  #address {
+    float: left;
+    width: 45%;
+  }
+
+  /* Footer style rules  */
 }
 
 @media screen and (max-width: 600px) {
