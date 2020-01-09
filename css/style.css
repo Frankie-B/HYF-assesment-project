@@ -120,6 +120,7 @@ h3.contact-subheading,
 .img1,
 .img2,
 .img3 {
+  min-height: 80vh;
   background-position: center;
   background-size: cover;
 }
@@ -139,7 +140,6 @@ h3.contact-subheading,
   height: 100vh;
 }
 
-section li,
 .community-social p {
   margin-top: 20px;
 }
@@ -206,8 +206,12 @@ h3.subheading {
   z-index: 3;
 }
 
+.content-container {
+  float: left;
+}
+
 .list-container a {
-  margin: 40px;
+  /* margin: 40px; */
   text-decoration: none;
 }
 
@@ -231,17 +235,14 @@ h3.subheading {
 
 .img1 {
   background-image: url('../assets/tulips.jpg');
-  min-height: 90vh;
 }
 
 .img2 {
   background-image: url('../assets/bikes.jpg');
-  min-height: 90vh;
 }
 
 .img3 {
   background-image: url('../assets/canal.jpg');
-  min-height: 90vh;
 }
 
 .img1,
@@ -255,7 +256,7 @@ h3.subheading {
 
 /* Resources style rules  */
 div.list-container {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 section li {
@@ -402,7 +403,7 @@ footer a {
   }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 768px) {
   /* Parallax background */
   .img1,
   .img2,
@@ -413,6 +414,13 @@ footer a {
   .img-text {
     font-size: 1rem;
     letter-spacing: normal;
+  }
+
+  div#books ul,
+  div#videos ul,
+  div#apps ul {
+    color: red;
+    float: left;
   }
 
   /* Meetup */
@@ -500,39 +508,22 @@ footer a {
   }
 
   .white-section {
-    height: 50%;
+    height: 90%;
   }
 
-  /* Section content styles */
-  #resources {
-    overflow: scroll;
-    text-align: center;
+  /* Content Section content styles */
+  .list-container {
+    z-index: 2;
   }
 
   #resources ul {
     text-align: center;
   }
 
-  div.list-container h4 {
-    font-size: 15px;
-    margin-bottom: 20px;
-    margin-left: 25%;
-    width: 65%;
-  }
-
-  #resources,
-  #meetups,
-  #community {
-  }
-
-  section li {
+  .list-container h4 {
+    margin-bottom: 5px;
+    text-align: center;
     width: 100%;
-  }
-
-  #resources div.list-container h4 {
-    display: inline-block;
-    margin: 0 auto;
-    width: 70%;
   }
 
   /* Community section style rules */
@@ -619,4 +610,8 @@ footer a {
     float: right;
     margin-right: 2%;
   }
+}
+
+.debug {
+  border: 5px red solid;
 }
