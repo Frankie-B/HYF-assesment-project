@@ -5,15 +5,11 @@
   padding: 0;
 }
 
-/* * {
-  border: 1px solid red;
-} */
-
 /* Global style rules */
 body {
   max-height: 100%;
   font-family: 'Open sans', sans-serif;
-  overflow-x: auto;
+  overflow-x: hidden;
   text-align: center;
 }
 
@@ -136,11 +132,6 @@ h3.contact-subheading,
   background-color: #000000;
 }
 
-.topnav a:hover,
-.list-container a:hover {
-  border: 1px solid #ff4f00;
-}
-
 #background,
 .white-section {
   height: 100vh;
@@ -166,6 +157,13 @@ h3.contact-subheading {
   font-size: 0.75rem;
 }
 
+.topnav a,
+li.list-item a.link-text,
+div.community-meetups a,
+#email {
+  text-decoration: none;
+}
+
 /* End of global style rules  */
 .topnav {
   position: sticky;
@@ -178,7 +176,6 @@ h3.contact-subheading {
   right: 15px;
   margin-right: 5px;
   padding: 10px 15px;
-  text-decoration: none;
   font-size: 1rem;
 }
 
@@ -218,11 +215,6 @@ h3.subheading {
 
 .content-container {
   float: left;
-}
-
-.list-container a {
-  /* margin: 40px; */
-  text-decoration: none;
 }
 
 .container-fluid {
@@ -286,14 +278,18 @@ section#resources p {
   margin-bottom: 30px;
 }
 
-#meetup p a {
-  text-decoration: none;
+table {
+  margin-top: 15px;
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+#table-center {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+td {
+  max-width: 100px;
 }
 
 p.alt-meetup-info {
@@ -341,7 +337,7 @@ span a {
 
 .contact-subheading {
   position: absolute;
-  top: 30px;
+  top: 60px;
   left: 0;
   right: 0;
   width: 40%;
@@ -354,7 +350,7 @@ span a {
 
 .cta {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 0;
   right: 0;
   text-align: center;
@@ -400,7 +396,8 @@ span a {
 #footer-tagline {
   left: 0;
   right: 0;
-  margin-left: 30%;
+  margin: 0 auto;
+  margin-left: 18%;
   margin-right: 30%;
 }
 
@@ -480,16 +477,20 @@ footer a {
   .main-heading {
     font-size: 6rem;
     position: absolute;
-    top: 40%;
+    top: 15%;
     left: 1%;
     text-align: center;
     width: 100%;
   }
 
+  .down-button {
+    top: 60%;
+  }
+
   .topnav a {
-    display: block;
-    margin-top: 1%;
-    width: 100%;
+    font-size: 0.65rem;
+    margin-left: -15px;
+    margin-top: 5px;
   }
 
   #tagline {
@@ -531,9 +532,9 @@ footer a {
   }
 
   /* Table styles */
-  table {
+  /*   table {
     visibility: hidden;
-  }
+  } */
 
   div.social {
     font-size: 5px;
@@ -542,11 +543,14 @@ footer a {
 
   /* Contact section style rules  */
   .contact-subheading {
+    top: 60px;
     font-size: 0.95rem;
   }
 
   .cta {
+    top: 125px;
     font-size: 0.75rem;
+    width: 90%;
   }
 
   /* Footer styling rules */
@@ -565,9 +569,5 @@ footer a {
   #footer-tagline {
     margin-left: 1%;
     margin-right: 1%;
-  }
-
-  .debug {
-    border: 5px red solid;
   }
 }
