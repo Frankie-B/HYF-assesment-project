@@ -1,18 +1,15 @@
-// Script for background to fill screen
-$(function() {
-  //  Smooth scroll feature
-  $('nav a, .down-button a').bind('click', function() {
-    $('html, body')
-      .stop()
-      .animate(
-        {
-          scrollTop: $($(this).attr('href')).offset().top,
-        },
-        1500,
-        'easeInOutExpo'
-      );
-    event.preventDefault();
-  });
+//  Smooth scroll feature
+$('nav a, .down-button a').bind('click', function() {
+  $('html, body')
+    .stop()
+    .animate(
+      {
+        scrollTop: $($(this).attr('href')).offset().top,
+      },
+      1500,
+      'easeInOutExpo'
+    );
+  event.preventDefault();
 });
 
 // Function for back to top feature
